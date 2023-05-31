@@ -1,4 +1,4 @@
-# About the Programming Lanugage Project
+# About the Programming Language Project
 This Programing Language Project (PLP) is part of the CS 330 curriculum as taught by Simmons University's Complete Degree Program. For this project, I will provide public, in-depth tutorials on how to read and write code written in C++. All information sourced textbooks and online repositories will be cited and updated on this page.
 
 #### Works Cited
