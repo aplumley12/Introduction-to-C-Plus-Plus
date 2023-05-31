@@ -1,0 +1,62 @@
+// imports
+#include <iostream>
+#include <istream>
+#include <string>
+#include <map>
+
+// class definition
+int main()
+{
+  /////// DECLARING VARIABLES AND THEIR DATATYPES ///////
+  
+  // declaring an integer
+  int i = 12;
+  
+  // declaring a floating-point
+  float f = 3.14;
+  
+  // declaring a character
+  char c = 'a';
+  
+  // declaring a boolean
+  bool b = true;
+  
+  // declaring a string
+  std::string s = "apple";
+  
+  // declaring and filling an array
+  int numbers[3];
+  numbers[0] = 10; numbers[1] = 20; numbers[2] = 30;
+  
+  // declaring and filling an array example #2
+  std::string animals[4] = {"cat", "dog", "fish", "snake"};
+  
+  // declaring and adding to a map
+  std::map<std::string, std::string> capitals;
+  capitals["Spain"] = "Madrid";
+  capitals["France"] = "Paris";
+  capitals["Italy"] = "Rome";
+  capitals["England"] = "London";
+  capitals["Denmark"] = "Copenhagen";
+  
+  /////// ARITHMETIC OPERATIONS ///////
+  int x = 10;
+  int y = 5;
+  float z = 2.27;
+  
+  // addition 
+  std::cout << x << " + " << y << " = " << x + y << std::endl;
+  std::cout << x << " + " << z << " = " << x + z << std::endl;
+  
+  // subtraction
+  std::cout << x << " - " << y << " = " << x - y << std::endl;
+  std::cout << x << " - " << z << " = " << x - z << std::endl;
+  
+  // multiplication 
+  std::cout << x << " x " << y << " = " << x * y << std::endl;
+  std::cout << x << " x " << z << " = " << x * z << std::endl;
+  
+  // division
+  std::cout << x << " / " << y << " = " << x / y << std::endl;
+  std::cout << x << " / " << z << " = " << x / z << std::endl;
+  }
