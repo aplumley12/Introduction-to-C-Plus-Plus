@@ -35,20 +35,20 @@ Often a program needs to combine multiple boolean values into a single result. C
 
 The `&&` (AND) operator examines the adjacent boolean expressions from left to right and returns `true` if BOTH evaluate to `true`. If at least one expression evaluates to `false`, the entire expression returns `false`. For example, the following code returns `true` because both expressions are `true`. 
 ```
-(5 < 10) && (6 <= 10)
+(5 < 10) && (6 <= 10);
 ``` 
 On the other hand, this code returns `false` because the first expression evaluates to `false`. 
 ```
-(3 % 2 == 0) && (7 > 0)
+(3 % 2 == 0) && (7 > 0);
 ``` 
 
 The `||` (OR) operator examines the adjacent boolean expressions and returns `true` if AT LEAST ONE evaluates to `true`. In other words, this operator will only return `false` if both expressions are `false`. For example, the following code returns `true` because the first expression evaluates to `true`.
 ```
-(6 % 3 == 0) || (9 > 12)
+(6 % 3 == 0) || (9 > 12);
 ```
 However, this line of code returns `false` because both expressions evaluate to `false`.
 ```
-(7 < 6) || (10 > 12)
+(7 < 6) || (10 > 12);
 ```
 
 The results of compound boolean expressions are summarized in the following truth table.
@@ -82,7 +82,7 @@ if (x < 10) {
 In this example, the code executes because 5 is larger than 4. We can also include a logical operator in the expression to produce a multi-condition `if` statement:
 ```
 if (x < 0 && x < 10) {
-  std::cout << x << " is a single positive, single-digit integer."
+  std::cout << x << " is a positive, single-digit integer.";
 }
 ```
 #### The `else` Statement 
@@ -111,7 +111,7 @@ In this example, the first condition evaluates to `false` because 12 is greater 
 associated with the `else` statement. Again, we can also modify this code to include a multi-condition `if` statement:
 ```
 if (x > 0 && x < 10) {
-  std::cout << x << " is a positive, single-digit" << std::endl;
+  std::cout << x << " is a positive, single-digit integer" << std::endl;
 } else {
     std::cout << x << " is not between 0 and 10" << std::endl;
 }
@@ -263,8 +263,9 @@ if (i < 1 || i++) {
 
 // short-circuiting with a logical AND operator
 if (i > 0 && i++) {
-  std::cout << i << " has not been incremented because of short-circuit logic!" << std::endl;
+  // this code block will not execute
 }
+std::cout << i << " has not been incremented because of short-circuit logic!" << std::endl;
 ```
 
 
