@@ -1,0 +1,200 @@
+/*
+A NOTE ON USER INPUT
+In C++, a program gathers user input using the predefined variable cin and the input operator >>.
+The input operator is followed by a variable that stores this input for later use.
+*/
+
+// imports
+#include <iostream>
+#include <istream>
+
+// class definition
+main() 
+{
+    /////// BOOLEAN VALUES ///////
+    std::cout << "BOOLEAN VALUES\n" << std::endl;
+
+    bool t = true;
+    bool f = false;
+
+    std::cout << "True is equivalent to " << t << std::endl;
+    std::cout << "False is equivalent to " << f << std::endl;
+
+    /////// BOOLEAN EXPRESSIONS ///////
+    std::cout << "\nBOOLEAN EXPRESSIONS\n" << std::endl;
+
+    // declare integer variable
+    int i = 5;
+
+    // the following evaluates to true
+    std::cout << (i < 10) << std::endl;
+
+    // the following evaluates to false
+    std::cout << (i > 10) << std::endl;
+
+    /////// LOGICAL AND/OR OPERATORS ///////
+    std::cout << "\nLOGICAL AND/OR OPERATORS\n" << std::endl; 
+
+    // the following evaluates to true
+    std::cout << ((i < 10) && (i > 0)) << std::endl;
+
+    // the following evaluates to false
+    std::cout << ((i % 2 == 0) && (i == 5)) << std::endl;
+
+    // the following evaluates to true
+    std::cout << ((i < 10) || (i/5 == 0)) << std::endl;
+
+    // the following evaluates to false
+    std::cout << ((i > 10) || (i < 0)) << std::endl;
+
+    /////// CONDITIONAL STATEMENTS ///////
+    std::cout << "\nCONDITIONALS STATEMENTS\n" << std::endl;
+
+    // the if statement (interactive)
+    int input;
+
+    std::cout << "This is an if statement! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input < 10) {
+        std::cout << input << " is less than 10" << std::endl;
+    }
+
+    // the multi-condition if statement (interative)
+    std::cout << "This is a multi-condition if statement! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input < 0 && input < 10) {
+        std::cout << input << " is a positive, single-digit integer" << std::endl;
+    }
+
+    // the if/else statement (interactive)
+    std::cout << "This is an if/else statement! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input < 10) {
+        std::cout << input << " is less than 10" << std::endl;
+    } else {
+        std::cout << input << " is greater than 10" << std::endl;
+    }
+
+    // the multi-condition if/else statement (interactive)
+    std::cout << "This is a multi-condition if/else statement! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input > 0 && input < 10) {
+        std::cout << input << " is a positive, single-digit integer" << std::endl;
+    } else {
+        std::cout << input << " is not between 0 and 10" << std::endl;
+    }
+
+    // the else if statement (interactive)
+    std::cout << "This is a else if statement! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input < 10) {
+        std::cout << input << " is less than 10" << std::endl;
+    } else if (input == 10) {
+        std::cout << input << " is equal to 10" << std::endl;
+    } else {
+        std::cout << input << " is greater than 10" << std::endl;
+    }
+
+    // the multi-condition else if statement (interactive)
+    std::cout << "This is a multi-condition else if statement! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input > 0 && input < 10) {
+        std::cout << input << " is a positive, single-digit integer" << std::endl;
+    } else if (input < 0 && input > -10) {
+        std::cout << input << " is a negative, single-digit integer" << std::endl;
+    } else {
+        std::cout << input << " is not a single-digit integer" << std::endl;
+    }
+
+    /////// CHAINED AND NESTED CONDITIONALS ///////
+    std::cout << "\nCHAINED AND NESTED CONDITIONALS\n" << std::endl;
+
+    // chained conditionals (interactive)
+    std::cout << "This is a chained conditional! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input % 2 == 0) {
+        std::cout << input << " is even." << std::endl;
+    } if (input < 10) {
+        std::cout << input << " is a single digit integer." << std::endl;
+    }
+
+    // nested conditionals (interactive)
+    std::cout << "This is a nested conditional! Enter an integer: "; // ask the user for input
+    std::cin >> input; // get input
+
+    if (input > 0) {
+        std::cout << input << " is a positive integer " << std::endl;
+        if (input % 2 == 0) {
+            std::cout << " and even. Dividing by 2..." << std::endl;
+            std::cout << "Result: " << input/2 << std::endl;
+        }
+    } 
+
+    /////// SWITCH STATEMENTS ///////
+    std::cout << "\nSWITCH STATEMENTS\n" << std::endl;
+
+    // switch statements (interactive)
+    std::cout << "This is a switch statement! Enter an the number of a month (1-12): "; // ask the user for input
+    std::cin >> input; // get input
+
+    switch(input) {
+        case 1: 
+            std::cout << "January";
+            break;
+        case 2:
+            std::cout << "February";
+            break;
+        case 3: 
+            std::cout << "March";
+            break;
+        case 4:
+            std::cout << "April";
+            break;
+        case 5:
+            std::cout << "May";
+            break;
+        case 6:
+            std::cout << "June";
+            break;
+        case 7: 
+            std::cout << "July";
+            break;
+        case 8:
+            std::cout << "August";
+            break;
+        case 9:
+            std::cout << "September";
+            break;
+        case 10:
+            std::cout << "October";
+            break;
+        case 11:
+            std::cout << "November";
+            break;
+        case 12:
+            std::cout << "December";
+            break;
+        default:
+            std::cout << "There are only 12 months in a year!";
+    }
+
+    /////// SHORT CIRCUIT LOGIC ///////
+    std::cout << "\nSHORT CIRCUIT LOGIC\n" << std::endl;
+
+    // short-circuiting with a logical OR operator
+    if (i < 10 || i++) {
+        std::cout << i << " has not been incremented due to short-circuit logic!" << std::endl;
+    }
+
+    if (i > 10 && i++) {
+        // this code block will not execute
+    }
+    std::cout << i << " has not been incremented due to short-circuit logic!" << std::endl;
+}
