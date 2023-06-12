@@ -42,7 +42,7 @@ The example below takes the average of an integer array and prints it to the ter
 float sum = 0;
 int numbers[5] = {3, 9, 17, 12, 6};
 for (int i : numbers) {
-  sum = sum + i
+  sum = sum + i;
 }
 std::cout << "the average is: " << sum/5 << std::endl;
 ```
@@ -50,13 +50,62 @@ Each time this loop executes, i is assigned the next element in the `numbers` ar
 every item, the sum is divided by the array's length and displayed in the terminal.
 
 ## The `while` Loop
-A `while` loop will continue to execute a block of code until its conditional statement becomes false. To avoid an infinite loop, a while loop should always include some form 
-of update moving it towards completion. The basic C++ syntax is as follows:
+A `while` loop will continue to execute a block of code until its conditional statement becomes false. This condition is always tetsted **before** each iteration. 
+To avoid an infinite loop, a while loop should always include some form of update moving it towards completion. The basic C++ syntax is as follows:
 ```
 while (condition) {
   // code block executed on each iteration
 }
 ```
-The example below uses a while loop to convert a number to its hexadecimal equivalent:
-We can also use a while loop instead of a for loop to write the countdown code from example 1:
+The example below uses a while loop to calculate the factrorial of 5 (5!):
+##### Example (3)
+```
+int factorial = 5;
+int product = 1;
+while (factorial > 0) {
+  product = product * factorial;
+  factorial--;
+}
+std::cout << product << std::endl;
+```
+Often times, while and for loops can be used interchangably. For example, we can use a while loop instead of a for loop to write the countdown code from example 1:
+##### Example (4)
+```
+int i = 10;
+while (i > 0) {
+  std::cout << i << std::endl;
+  i--;
+}
+std::cout << "LIFT OFF!" << std::endl;
+```
+We can also use a for loop instead of a while loop to calculate the factorial in example 3:
+##### Example (5)
+```
+int factorial = 5;
+int product = 1;
+for(int i = factorial, i > 0, i--) {
+  product = product * i;
+}
+std::cout << product << std::endl;
+```
+## The Do-While Loop
+A do-while loop is a variation of the while loop that tests the conditional statement **after** each iteration. In other words, this type of loop always executes at least once! The basic C++ syntax is as follows:
+```
+do{
+  // code block executed on each iteration
+} while (condition);
+```
+The example below uses a do-while loop to prompt the user for input until the correct password is given:
+##### Example (6)
+```
+std::string password;
+std::string input;
+do{
+  std::cout << "Enter the passwowrd: ";
+  std::cin >> input;
+} while (input != password);
+std::cout << "Correct!" << std::endl;
+
+```
+
 
