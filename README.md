@@ -7,6 +7,8 @@ This Programing Language Project (PLP) is part of the CS 330 curriculum as taugh
 
 Gautam, Sanghpriya. “C++ Do/While Loop.” GeeksforGeeks, 25 Oct. 2022, www.geeksforgeeks.org/cpp-do-while-loop/. 
 
+Josuttis, Nicolai M. The C++ Standard Library: A Tutorial and Reference. 2nd ed., Pearson Education, Inc., 2012. 
+
 Lenka, Chinmoy. “C++ For Loop.” GeeksforGeeks, 9 Jan. 2023, www.geeksforgeeks.org/cpp-for-loop/?ref=gcse. 
 
 Lenka, Chinmoy. “C++ While Loop.” GeeksforGeeks, 25 Oct. 2022, www.geeksforgeeks.org/cpp-while-loop/. 
