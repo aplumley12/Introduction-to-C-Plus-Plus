@@ -98,7 +98,7 @@ do{
 The example below uses a do-while loop to prompt the user for input until the correct password is given:
 ##### Example (6)
 ```c++
-string password;
+string password = "12ab";
 string input;
 do{
   cout << "Enter the passwowrd: ";
