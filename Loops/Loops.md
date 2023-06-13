@@ -5,7 +5,7 @@ each with unique advantages.
 
 ## The `for` Loop
 A `for` loop allows the user to specify how many times a code block should execute. The basic C++ syntax is as
-follows:
+follows (Lenka):
 ```
 for (counter, condition, increment) {
   // code block executed on each iteration
@@ -28,7 +28,7 @@ on each iteration, moving the loop towards completion.
 
 ## The For-Each Loop
 The for-each loop is a variation of the for loop used exclusively to iterate over elements in an array or other
-data structure. The basic C++ syntax is as follows:
+data structure. The basic C++ syntax is as follows (Lenka):
 ```
 for (type variable_name : array_name) {
   // code block executed for each element in the array
@@ -51,7 +51,7 @@ every item, the sum is divided by the array's length and displayed in the termin
 
 ## The `while` Loop
 A `while` loop will continue to execute a block of code until its conditional statement becomes false. This condition is always tetsted **before** each iteration. 
-To avoid an infinite loop, a while loop should always include some form of update moving it towards completion. The basic C++ syntax is as follows:
+To avoid an infinite loop, a while loop should always include some form of update moving it towards completion. The basic C++ syntax is as follows (Lenka):
 ```
 while (condition) {
   // code block executed on each iteration
@@ -89,7 +89,7 @@ for(int i = factorial, i > 0, i--) {
 cout << product << endl;
 ```
 ## The Do-While Loop
-A do-while loop is a variation of the while loop that tests the conditional statement **after** each iteration. In other words, this type of loop always executes at least once! The basic C++ syntax is as follows:
+A do-while loop is a variation of the while loop that tests the conditional statement **after** each iteration. In other words, this type of loop always executes at least once! The basic C++ syntax is as follows (Gautam):
 ```
 do{
   // code block executed on each iteration
