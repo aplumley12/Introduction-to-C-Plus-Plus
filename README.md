@@ -1,7 +1,16 @@
 # About the Programming Language Project
-This Programing Language Project (PLP) is part of the CS 330 curriculum as taught by Simmons University's Complete Degree Program. For this project, I will provide public, in-depth tutorials on how to read and write code written in C++. All information sourced textbooks and online repositories will be cited and updated on this page.
+This Programing Language Project (PLP) is part of the CS 330 curriculum as taught by Simmons University's Complete Degree Program. For this project, I will provide public, in-depth tutorials on how to read and write code in C++. All information sourced from textbooks and online repositories will be cited and updated on this page.
 
 #### Works Cited
+
+“Functions in C++ .” GeeksforGeeks, 16 Mar. 2023, www.geeksforgeeks.org/functions-in-cpp/?ref=gcse.
+
+Gautam, Sanghpriya. “C++ Do/While Loop.” GeeksforGeeks, 25 Oct. 2022, www.geeksforgeeks.org/cpp-do-while-loop/. 
+
+Lenka, Chinmoy. “C++ For Loop.” GeeksforGeeks, 9 Jan. 2023, www.geeksforgeeks.org/cpp-for-loop/?ref=gcse. 
+
+Lenka, Chinmoy. “C++ While Loop.” GeeksforGeeks, 25 Oct. 2022, www.geeksforgeeks.org/cpp-while-loop/. 
+
 Peet, Connor. "Using GCC with MinGW." *Visual Studio Code*, 13 May 2022, 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code.visualstudio.com/docs/cpp/config-mingw.
    
