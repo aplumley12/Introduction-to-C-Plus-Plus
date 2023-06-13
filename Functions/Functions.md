@@ -27,7 +27,7 @@ int main() {
 /*
 This is the main function; it calls the greeting() function
 */
-  greeting("Mary Sue")
+  greeting("Mary Sue");
 }
 ```
 In this example, the `greeting()` function is called inside `main()`. Additionally, note that any user-defined functions such as
@@ -48,7 +48,7 @@ int baseConversion(int num, int base) {
     q = num / base;
     r = num % base;
     num = q;
-    ans.insert(0, to_string(r))
+    ans.insert(0, to_string(r));
   }
   return (stoi(ans));
 }
@@ -73,7 +73,7 @@ int factorial(int n) {
   Takes in an integer n, and uses recursion to calculate n!
   */
   if (n > 1) {
-    return n * factorial(n - 1)
+    return n * factorial(n - 1);
   } else {
     return 1;
   }
@@ -159,20 +159,20 @@ void split(string s, char del, string &substr_1, string &substr_2) {
   char char_array[s.length() + 1];
   // strcpy() function and .c_str() method used to convert the string to chars and store them in char_array
   // note that both strcpy() and .c_str() can be imported via '#include <cstring>'
-  strcpy(ca, s.c_str());
+  strcpy(char_array, s.c_str());
   
   char c;
   int i = 0;
   while (c != del && i <= s.length()) {
     c = char_array[i];
     // the push_back() method appends a char to the end of a string
-    sub_1.push_back(c);
+    substr_1.push_back(c);
     i++;
   }
   
-  while (i <= original.length()) {
+  while (i <= s.length()) {
     c = char_array[i];
-    sub_2.push_back(c);
+    substr_2.push_back(c);
     i++;
   }
 }
@@ -183,13 +183,12 @@ int main() {
   and prints the new values of the substrings to the terminal
   */
   // initialize substring variables to empty strings
-  string sub_1 = "";
-  string sub_2 = "";
+  string substr_1 = "";
+  string substr_2 = "";
   
-  split("Hello World", ' ', sub_1, sub_2);
+  split("Hello World", ' ', substr_1, substr_2);
   
-  cout << sub_1 << endl;
-  cout << sub_2 << endl;
+  cout << substr_1 << "/n" << substr_2 << endl;
 }
 ```
 The `split()` function in Example (6) takes in a string, a delimeter, and two empty strings as parameters.
