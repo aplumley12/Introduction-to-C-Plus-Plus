@@ -188,7 +188,7 @@ int main() {
   
   split("Hello World", ' ', substr_1, substr_2);
   
-  cout << substr_1 << "/n" << substr_2 << endl;
+  cout << substr_1 << "\n" << substr_2 << endl;
 }
 ```
 The `split()` function in Example (6) takes in a string, a delimeter, and two empty strings as parameters.
