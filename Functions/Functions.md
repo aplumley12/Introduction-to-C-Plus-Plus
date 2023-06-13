@@ -3,7 +3,7 @@ A **function** is a block of code that only executes when called by name. The us
 function, where it is stored in variables known as *parameters*. Overall, functions allow programmers to run code multiple times
 without needing to duplicate it. This improves suscinctness and readability while reducing errors. Note that, while the inclusion of a docstring is not
 enforced, adding one after a function definition can help other programmers understand what the code does. The basic syntax for a C++ function with no return 
-value is as follows:
+value is as follows (Functions in C++):
 ```
 void exampleFunction(datatype parameter_1, datatype parameter_2) {
    // code block executed when this function is called by name
@@ -11,7 +11,7 @@ void exampleFunction(datatype parameter_1, datatype parameter_2) {
 ```
 Here, we can see that `exampleFunction()` is the function name and that the keyword `void` indicates that it has no return values.
 Additionally, notice how the parameters are written just like variable declarations. Keep in mind that a function call in C++ must include an 
-argument for each parameter, i.e., there are no optional parameters.
+argument for each parameter, i.e., there are no optional parameters (Functions in C++).
 
 Below is an example function that takes in the user's name as a parameter and prints a greeting to the terminal.
 
@@ -31,7 +31,7 @@ This is the main function; it calls the greeting() function
 }
 ```
 In this example, the `greeting()` function is called inside `main()`. Additionally, note that any user-defined functions such as
-`greeting()` must be declared *before* the main fucntion to avoid a scope error.
+`greeting()` must be declared *before* the main fucntion to avoid a scope error (Functions in C++).
 
 When declaring a function _with_ a return value, we must replace the `void` keyword with the datatype of the return value.
 For example, the following function converts an integer of base 10 to any other base and returns the value as an integer:
@@ -94,10 +94,10 @@ by taking the factorial of one less than `n`.
 Programming languages are often referred to as either pass-by reference or pass-by value, but what is the difference? 
 When passing a variable to a function by value, a copy of its stored data is made, leaving the original value 
 unaffected. On the other hand, when passing by reference, the _original_ variable is passed as an argument, and therefore, any updates  
-made within the funtion are reflected by the variable's stored value. In general, pass-by reference is more efficient because a program does 
-not have to store duplicates of arguments; however, this behavior may also lead to unintended changes to the data. 
+made within the funtion are reflected by the variable's stored value (Josuttis, 479). In general, pass-by reference is more efficient because a program does 
+not have to store duplicates of arguments; however, this behavior may also lead to unintended changes to the data (Josuttis, 479). 
 C++ supports BOTH pass-by reference and pass-by value via the _pointer_ datatype. For now, simply understand that pointers 'point' directly to a variable's
-location in memory and, therefore, allow a function to directly manipulate the data stored in it. 
+location in memory and, therefore, allow a function to directly manipulate the data stored in it (Josuttis, 76). 
 The following C++ function demonstrates pass-by value, in which, the original stored data is not manipulated by the function:
 ##### Example (4)
 ```c++
