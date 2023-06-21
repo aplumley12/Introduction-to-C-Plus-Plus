@@ -159,13 +159,15 @@ class Pet {
 };
 
 // derived class
-class Cat: public Pet {
+class Cat : public Pet {
   public:
     string breed;
   // constructor method with inherited attributes
-  Cat()
-} 
+  Cat(string n, int a, string b) : Pet(n, a) {
+    breed = b;
+  } 
 ```
+Notice that the `Cat` constructor method inherits the attributes `name` and `age` from the `Pet` constructor as denoted by the colon. 
 
 
 
