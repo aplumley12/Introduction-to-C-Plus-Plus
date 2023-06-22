@@ -167,7 +167,7 @@ class Cat : public Pet {
     breed = b;
   } 
 ```
-Notice that the `Cat` constructor method inherits the attributes `name` and `age` from the `Pet` constructor as denoted by the colon. 
+Notice that the `Cat` constructor method inherits the attributes `name` and `age` from the `Pet` constructor as denoted by the colon. In this example, the instances of the `Cat` class have access to the `name` and `age` attributes; however, instances of only the `Pet` class do not have access to the `breed` attribute.  
 
 
 
